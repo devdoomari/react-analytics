@@ -30,6 +30,7 @@
     "@types/react-router": "^3.0.8",
     "@types/recompose": "^0.20.4",
     "@types/webpack": "^2.2.11",
+    "babel-cli": "^6.24.0",
     "babel-core": "^6.24.0",
     "babel-loader": "^6.4.0",
     "babel-polyfill": "^6.23.0",
