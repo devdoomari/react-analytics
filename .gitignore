@@ -1,0 +1,8 @@
+node_modules
+docs_ts_compiled
+docs_src/**/*.js
+docs
+react-analytics-context.d.ts
+lib
+lib_es6
+*.log
