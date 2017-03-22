@@ -7,13 +7,15 @@ import {
 import {
   DEBUG_MODE,
 } from './DEBUG_MODE';
-export function combineAnalyticsContext(
+
+export type AugmentAnalyticsContextOptions = AnalyticsContextType & {
+  component: React.ReactElement<any>,
+  componentName: string,
+  action: string,
+};
+export function augmentAnalyticsContext(
   parentContext: AnalyticsContextType,
-  options: AnalyticsContextType & {
-    component: React.ReactElement<any>,
-    componentName: string,
-    action: string,
-  }
+  options: AugmentAnalyticsContextOptions,
 ): AnalyticsContextType {
   return {
     ...parentContext,

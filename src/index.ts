@@ -1,6 +1,6 @@
 import {
-  combineAnalyticsContext,
-} from './combineContext';
+  augmentAnalyticsContext,
+} from './augmentContext';
 
 import {
   injectAnalyticsContext,
@@ -15,7 +15,7 @@ import {
 } from './types';
 
 export {
-  combineAnalyticsContext,
+  augmentAnalyticsContext,
 
   injectAnalyticsContext,
 

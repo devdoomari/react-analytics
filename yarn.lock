@@ -1005,6 +1005,10 @@ cssom@0.3.x, "cssom@>= 0.3.2 < 0.4.0":
   dependencies:
     cssom "0.3.x"
 
+csx@^8.2.1:
+  version "8.2.1"
+  resolved "https://registry.yarnpkg.com/csx/-/csx-8.2.1.tgz#a2eadd886fd51c8eeaaac3dc2a6e8f0e49ecc5e2"
+
 currently-unhandled@^0.4.1:
   version "0.4.1"
   resolved "https://registry.yarnpkg.com/currently-unhandled/-/currently-unhandled-0.4.1.tgz#988df33feab191ef799a61369dd76c17adf957ea"
@@ -1338,6 +1342,10 @@ form-data@~2.1.1:
     asynckit "^0.4.0"
     combined-stream "^1.0.5"
     mime-types "^2.1.12"
+
+free-style@2.3.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/free-style/-/free-style-2.3.0.tgz#b1deaa65bc897e2ba1553d6ac323aa35823940b0"
 
 fs-extra@^0.26.4:
   version "0.26.7"
@@ -3769,6 +3777,12 @@ type-check@~0.3.2:
 typescript@^2.2.1:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-2.2.1.tgz#4862b662b988a4c8ff691cc7969622d24db76ae9"
+
+typestyle@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/typestyle/-/typestyle-1.2.1.tgz#8b3d8a66fb9a7af3d10ecc5b8b78104524d0910c"
+  dependencies:
+    free-style "2.3.0"
 
 ua-parser-js@^0.7.9:
   version "0.7.12"
