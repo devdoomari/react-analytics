@@ -9,9 +9,9 @@ import {
 } from './DEBUG_MODE';
 
 export type AugmentAnalyticsContextOptions = AnalyticsContextType & {
-  component: React.ReactElement<any>,
-  componentName: string,
-  action: string,
+  component?: React.ReactElement<any>,
+  componentName?: string,
+  action?: string,
 };
 export function augmentAnalyticsContext(
   parentContext: AnalyticsContextType,

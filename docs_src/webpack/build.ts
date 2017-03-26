@@ -15,6 +15,9 @@ const config: webpack.Configuration = {
     libraryTarget: 'umd',
   },
   plugins: [
+    new webpack.DefinePlugin({
+      'process.env.REACT_ANALYTICS_CONTEXT': `'debug'`,
+    }),
     new ReactStaticPlugin({
       routes: path.resolve(__dirname, '../Routes.tsx'),
       template: path.resolve(__dirname, '../template.tsx'),
@@ -56,6 +59,13 @@ const config: webpack.Configuration = {
           'sass?sourceMap',
         ],
         exclude: /app\/styles/,
+      }, {
+        test: /\.styl$/,
+        loaders: [
+          'style-loader',
+          'css-loader',
+          'stylus-loader',
+        ],
       }, {
         test: /\.woff$/,
         loader: 'url-loader?limit=10000&mimetype=application/font-woff&name=[name].[ext]',

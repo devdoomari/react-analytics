@@ -5,6 +5,8 @@ import { browserHistory } from 'react-router';
 
 import 'bootstrap/dist/css/bootstrap.css';
 
+import './jsonpretty.styl';
+
 import App from './App';
 
 const history = browserHistory;

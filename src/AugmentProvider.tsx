@@ -6,6 +6,7 @@ import {
 
 import { injectAnalyticsContext } from './inject';
 import { Provider } from './Provider';
+// import { ProviderWithRouter } from './ProviderWithRouter';
 import {
   augmentAnalyticsContext,
   AugmentAnalyticsContextOptions,
@@ -30,13 +31,26 @@ export type StateType = {
 @injectAnalyticsContext
 export default class AnalyticsContextAugmentProvider extends React.Component<PropsType, StateType> {
   render() {
+    console.error('this.props.children:', this.props.children);
+
+    const test = (
+      <Provider
+        analyticsContext={augmentAnalyticsContext(
+            this.props.analyticsContext, this.props.augmentContext
+        )}
+      >
+        {this.props.children}
+      </Provider>
+    );
+
+    console.error('AugmentProvider Provider:', test);
     return (
       <Provider
         analyticsContext={augmentAnalyticsContext(
             this.props.analyticsContext, this.props.augmentContext
         )}
       >
-        {React.Children.only(this.props.children)}
+        {this.props.children}
       </Provider>
     );
   }

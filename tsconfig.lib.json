@@ -26,6 +26,7 @@
     "!node_modules/rxjs",
     "lib",
     "lib_es6",
+    "tools",
     "examples",
     "src_old",
     "webpack"

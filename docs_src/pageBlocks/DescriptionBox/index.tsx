@@ -1,17 +1,22 @@
 import * as React from 'react';
-import Header from './pageBlocks/Header';
 
 export type PropsType = {
-
+  color: string,
 };
+
 export type StateType = {
 
 };
-export default class PageRoot extends React.Component<PropsType, StateType> {
+export default class DescriptionBox extends React.Component<PropsType, StateType> {
   render() {
     return (
-      <div>
-        <Header />
+      <div
+
+      >
+        <span>
+
+        </span>
+        <ul />
         {this.props.children}
       </div>
     )

@@ -2,6 +2,7 @@ import * as React from 'react';
 import { History } from 'history';
 import { Router } from 'react-router';
 import routes from './Routes';
+
 export type PropsType = {
   history: History,
 };

@@ -9,7 +9,7 @@
     "jsx": "react",
     "experimentalDecorators": true,
     "rootDirs": [
-      "src", "docs"
+      "src", "docs", "tools"
     ],
     "outDir": "docs_ts_compiled"
   },

@@ -14,7 +14,7 @@ function getRoutePath(basePath: string) {
   return (
     <Route path={basePath} component={PageRoot} >
       <IndexRoute component={IndexPage} />
-      <Route path="page1" component={Page1} />
+      <Route path="page1/" component={Page1} />
     </Route>
   );
 }
