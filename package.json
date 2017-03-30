@@ -11,7 +11,7 @@
     "run_doc": "npm run compile_doc_webpack && webpack-dev-server --config docs/webpack/build.js",
     "storybook": "start-storybook -p 7001",
     "build-storybook": "build-storybook",
-    "test": "npm run unittest",
+    "test": "echo 'no tests yet'",
     "unittest": "jest --config src/__unittests__/jest_unittests.json"
   },
   "name": "react-analytics-context",
