@@ -44,7 +44,7 @@
     "copy-webpack-plugin": "^4.0.1",
     "css-loader": "^0.27.3",
     "csx": "^8.2.1",
-    "dts-generator": "^2.1.0",d
+    "dts-generator": "^2.1.0",
     "enzyme": "^2.7.1",
     "extract-text-webpack-plugin": "^2.1.0",
     "file-loader": "^0.10.1",
