@@ -18,7 +18,9 @@ import {
 
 type AnalyticsContextPropsWithRouterType = AnalyticsContextPropsType
  & WithRouterProps;
-export const withAnalyticsContextAndPath = withContext({
+export const withAnalyticsContextAndPath = withContext<
+  AnalyticsContextType, AnalyticsContextPropsWithRouterType
+>({
   analyticsContext: React.PropTypes.object,
   children: React.PropTypes.any,
 }, (props: AnalyticsContextPropsWithRouterType)  => {
@@ -39,7 +41,7 @@ const _ProviderWithRouter: React.SFC<AnalyticsContextPropsWithRouterType> =
   return React.Children.only(props.children);
 };
 
-export const ProviderWithRouter = withRouter(
+export const ProviderWithRouter = withRouter<AnalyticsContextPropsWithRouterType>(
   withAnalyticsContextAndPath(_ProviderWithRouter)
 );
 
