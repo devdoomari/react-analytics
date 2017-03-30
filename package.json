@@ -41,6 +41,7 @@
     "bootstrap": "^3.3.7",
     "console-polyfill": "^0.2.3",
     "copy-webpack-plugin": "^4.0.1",
+    "copyfiles": "^1.2.0",
     "css-loader": "^0.27.3",
     "csx": "^8.2.1",
     "dts-generator": "^2.1.0",
