@@ -1,0 +1,5 @@
+node_modules
+docs_ts_compiled
+docs_src/**/*.js
+docs
+*.log
