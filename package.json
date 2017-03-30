@@ -2,7 +2,7 @@
   "scripts": {
     "clean": "rm -rf lib_es6 lib docs_src/webpack/*.js dist docs docs_ts_compiled",
     "build_es6": "tsc --project tsconfig.lib.json",
-    "es6_to_es5": "babel lib_es6 --out-dir lib",
+    "es6_to_es5": "babel lib_es6 --out-dir lib && copyfiles -u 1 'lib_es6/*.d.ts' lib",
     "build_lib": "npm run build_es6 && npm run es6_to_es5",
     "prepublish": "npm run clean && npm run build",
     "generate_dts": "node tools/dts-generator.js",
@@ -15,10 +15,9 @@
     "unittest": "jest --config src/__unittests__/jest_unittests.json"
   },
   "name": "react-analytics-context",
-  "types": "lib_es6/index.d.ts",
+  "main": "lib/index.js",
   "version": "0.0.1",
   "description": "configurable react analytics components/helpers/etc.",
-  "main": "index.js",
   "author": "devdoomari.ubuntu.tablet <devdoomari@gmail.com>",
   "license": "MIT",
   "devDependencies": {
