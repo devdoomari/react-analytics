@@ -16,6 +16,7 @@
   },
   "name": "react-analytics-context",
   "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "version": "0.0.1",
   "description": "configurable react analytics components/helpers/etc.",
   "author": "devdoomari.ubuntu.tablet <devdoomari@gmail.com>",
