@@ -31,19 +31,6 @@ export type StateType = {
 @injectAnalyticsContext
 export default class AnalyticsContextAugmentProvider extends React.Component<PropsType, StateType> {
   render() {
-    console.error('this.props.children:', this.props.children);
-
-    const test = (
-      <Provider
-        analyticsContext={augmentAnalyticsContext(
-            this.props.analyticsContext, this.props.augmentContext
-        )}
-      >
-        {this.props.children}
-      </Provider>
-    );
-
-    console.error('AugmentProvider Provider:', test);
     return (
       <Provider
         analyticsContext={augmentAnalyticsContext(
